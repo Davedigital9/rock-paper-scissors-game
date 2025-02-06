@@ -243,6 +243,12 @@ body{
         max-height:100%;
         width: 50px;
     }
+
+    .rules-container{
+        text-align: center;
+        margin-top: 10px;
+        margin-right: 200px;
+    }
 }
 
 .rules-container{
