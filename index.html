@@ -10,6 +10,7 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Smooch+Sans:wght@500..900&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
+  <script src="script.js"></script>
 </head>
 
 <body>
@@ -18,7 +19,7 @@
     <div class="scoreboard"> <!-- scoreboard -->
 
       <div class="scoreboard_title">
-        <img src="./images/bg-image-0.png" alt="title image" width="150px" height="150px" style="border-radius:100px;">
+        <img src="./images/bg-image-0.png" alt="title image">
       </div>
 
       <div class="scoreboard_score">
@@ -29,26 +30,49 @@
 
     <div class="hand_signs"> <!-- hand signs -->
       <div class="hand paper">
-        <img src="/images/paper.png" alt="" style="border-radius: 100%; width: 170px; height: 170px;">
+        <img src="/images/paper.png" alt="" style="border-radius: 100%; width: 170px; height: 170px;" onclick="pickUserHand('paper')">
       </div>
 
       <div class="hand scissors">
-        <img src="/images/scissors.png" alt="" style="border-radius: 100%; width: 170px; height: 170px;">
+        <img src="/images/scissors.png" alt="" style="border-radius: 100%; width: 170px; height: 170px;" onclick="pickUserHand('scissors')">
       </div>
 
       <div class="hand rock">
-        <img src="/images/rock.png" alt="" style="border-radius: 100%; width: 170px; height: 170px;">
+        <img src="/images/rock.png" alt="" style="border-radius: 100%; width: 170px; height: 170px;"  onclick="pickUserHand('rock')">
       </div>
 
       <div class="hand spock">
-        <img src="/images/spock.png" alt="" style="border-radius: 100%; width: 170px; height: 170px;">
+        <img src="/images/spock.png" alt="" style="border-radius: 100%; width: 170px; height: 170px;" onclick="pickUserHand('spock')">
       </div>
       
       <div class="hand lizard">
-        <img src="/images/lizard.png" alt="" style="border-radius: 100%; width: 170px; height: 170px;">
+        <img src="/images/lizard.png" alt="" style="border-radius: 100%; width: 170px; height: 170px;" onclick="pickUserHand('lizard')">
       </div>
 
     </div> <!-- end of hand signs -->
+
+    <div class="contest"> <!-- contest -->
+
+      <div class="userhand"> <!-- userhand -->
+        <h1>YOU PICKED</h1>
+        <div class="handImageContainer">
+          <img src="/images/rock.png" alt="">
+        </div>
+      </div> <!-- end of userhand -->
+
+      <div class="referee">
+          <div class="decision"><h1>YOU BEAT THE SYSTEM</h1></div>
+          <div class="newGame">Play Again</div>
+      </div>
+
+      <div class="computerhand"> <!-- computerhand -->
+        <h1>THE SYSTEM PICKED</h1>
+        <div class="handImageContainer">
+          <img src="/images/scissors.png" alt="">
+        </div>
+
+      
+    </div> <!-- end of contest -->
 
   </div> <!-- end of wrapper -->
 

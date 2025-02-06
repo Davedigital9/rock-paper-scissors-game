@@ -2,7 +2,6 @@
     padding: 0;
     margin: 0;
     box-sizing: border-box;
-    overflow: hidden;
 }
 
 body{
@@ -25,7 +24,7 @@ body{
 
 .scoreboard{
     width: 800px; 
-    height: 200px;
+    height: 180px;
     border: 2px solid #0c043f; 
     border-radius: 20px;
     margin-top: 45px; 
@@ -38,11 +37,17 @@ body{
     margin-left: 10px;
 }
 
+.scoreboard_title img{
+    width: 120px;
+    height: 120px;
+    border-radius:100px;
+}
+
 .scoreboard_score{
     width: 150px; 
     height: 114px; 
     background-color: #0c043f;
-    border-radius: 15px; 
+    border-radius: 20px; 
     display: flex; 
     flex-direction: column; 
     justify-content: center; 
@@ -67,7 +72,7 @@ body{
     background-image: url('images/bg-pentagon.svg');
     background-repeat: no-repeat;
     background-position: center;
-    width: 450px; 
+    width: 500px; 
     height: 470px; 
     display: flex;
     flex-wrap: wrap;
@@ -77,18 +82,18 @@ body{
 }
 
 .paper{
-    margin-top: 100px;
-    margin-left: -50px;
+    margin-top: 95px;
+    margin-left: -30px;
 }
 
 .scissors{
     margin-top: -10px;
-    margin-left: -10px;
+    margin-left: -15px;
 }
 
 .rock{
-    margin-top: 100px;
-    margin-left: -65px;
+    margin-top: 95px;
+    margin-right: -30px;
 }
 
 .spock{
@@ -108,4 +113,61 @@ body{
 
 .hand_signs .hand:hover {
     transform: translate3d(0px, -8px, 0px);;
+}
+
+
+.contest{
+    width: 950px;
+    display: none;
+}
+
+.contest img {
+    width: 300px;
+    height: 300px;
+    margin-top: 20px;
+}
+
+.contest > div{
+    flex:1;
+}
+
+.contest h1 {
+    color: white;
+    font-size: 23px;
+    margin-top: 10px;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.contest .handImageContainer{
+    display: flex;
+    justify-content: center;
+}
+
+.referee{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.referee h1{
+    color: white;
+    font-size: 3rem;
+}
+
+.newGame {
+    background-color: rgb(1, 27, 88);
+    padding: 16px 24px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 0.2s;
+    color: rgb(35, 200, 186);
+}
+
+.newGame:hover {
+    background-color: rgb(35, 200, 186);
+    color: rgb(1, 27, 88);
+    transform: translate3d(0px, -5px, 0px);
 }
