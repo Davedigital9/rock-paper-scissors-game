@@ -2,7 +2,7 @@
     padding: 0;
     margin: 0;
     box-sizing: border-box;
-
+    overflow: hidden;
 }
 
 body{
@@ -25,10 +25,10 @@ body{
 
 .scoreboard{
     width: 800px; 
-    height: 160px;
+    height: 200px;
     border: 2px solid #0c043f; 
     border-radius: 20px;
-    margin-top: 50px; 
+    margin-top: 45px; 
     display: flex; 
     justify-content: space-between; 
     align-items: center;
@@ -61,4 +61,51 @@ body{
     font-weight: 550;
     line-height: 18px;
     letter-spacing: 2.5px;
+}
+
+.hand_signs{
+    background-image: url('images/bg-pentagon.svg');
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 450px; 
+    height: 470px; 
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: -10px; 
+    margin-bottom: 25px;  
+}
+
+.paper{
+    margin-top: 100px;
+    margin-left: -50px;
+}
+
+.scissors{
+    margin-top: -10px;
+    margin-left: -10px;
+}
+
+.rock{
+    margin-top: 100px;
+    margin-left: -65px;
+}
+
+.spock{
+    margin-top: -30px;
+    margin-left: -10px;
+}
+
+.lizard{
+    margin-top: -30px;
+    margin-left: 10px;
+}
+
+.hand_signs .hand{
+    cursor: pointer;
+    transition: transform 0.25s;
+}
+
+.hand_signs .hand:hover {
+    transform: translate3d(0px, -8px, 0px);;
 }
