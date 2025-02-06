@@ -56,20 +56,21 @@
       <div class="userhand"> <!-- userhand -->
         <h1>YOU PICKED</h1>
         <div class="handImageContainer">
-          <img src="/images/rock.png" alt="">
+          <img id="userPickImage" src="/images/rock.png" alt="">
         </div>
       </div> <!-- end of userhand -->
 
       <div class="referee">
           <div class="decision"><h1>YOU BEAT THE SYSTEM</h1></div>
-          <div class="newGame">Play Again</div>
+          <div class="newGame" onclick="playAgain()">Play Again</div>
       </div>
 
       <div class="computerhand"> <!-- computerhand -->
         <h1>THE SYSTEM PICKED</h1>
         <div class="handImageContainer">
-          <img src="/images/scissors.png" alt="">
+          <img id="computerPickImage" src="/images/scissors.png" alt="">
         </div>
+      </div> <!-- end of computerhand -->
 
       
     </div> <!-- end of contest -->
