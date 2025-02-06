@@ -173,3 +173,74 @@ body{
     color: rgb(1, 27, 88);
     transform: translate3d(0px, -5px, 0px);
 }
+/* ...existing code... */
+
+@media (max-width: 768px) {
+    .wrapper {
+        width: 100%;
+        height: auto;
+        padding: 20px;
+        overflow: hidden;
+    }
+
+    .scoreboard {
+        width: 100%;
+        height: auto;
+        padding: 10px;
+    }
+
+    .scoreboard_title img {
+        width: 100px;
+        height: auto;
+    }
+
+    .scoreboard_score p {
+        font-size: 1.2rem;
+    }
+
+    .scoreboard_score h1 {
+        font-size: 2.5rem;
+    }
+
+    .contest {
+        width: 100%;
+        padding: 15px;
+        text-align: center;
+        justify-content: center;
+        margin-left: 10px;
+        margin-right: 10px;
+        overflow: hidden;
+    }
+
+    .userhand {
+        width: 25%;
+        height: auto;
+        margin-top: 15px;
+    }
+
+    .computerhand {
+        width: 25%;
+        height: auto;
+    }
+
+    .referee{
+        width: 30%;
+        height: auto;
+        padding: 30px;
+    }
+
+    .userhand h1{
+        font-size: 1.1rem;
+    }
+    .computerhand h1{
+        font-size: 1.1rem;
+    }
+    .referee h1{
+        font-size: 1.5rem;
+    }
+
+    .handImage{
+        max-height:100%;
+        width: 50px;
+    }
+}
