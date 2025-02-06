@@ -15,7 +15,50 @@ body{
     height: 100vh; /*100% of the viewport height*/
     background: radial-gradient(
         134.34% 134.34% at 50% 0%,
-        rgb(5, 5, 125) 0%,
-        rgb(1, 10, 39) 100%
+        rgb(35, 200, 186) 0%,
+        rgb(1, 27, 88) 100%
     );
+    display: flex; 
+    flex-direction: column; 
+    align-items: center;
+}
+
+.scoreboard{
+    width: 800px; 
+    height: 160px;
+    border: 2px solid #0c043f; 
+    border-radius: 20px;
+    margin-top: 50px; 
+    display: flex; 
+    justify-content: space-between; 
+    align-items: center;
+}
+
+.scoreboard_title{
+    margin-left: 10px;
+}
+
+.scoreboard_score{
+    width: 150px; 
+    height: 114px; 
+    background-color: #0c043f;
+    border-radius: 15px; 
+    display: flex; 
+    flex-direction: column; 
+    justify-content: center; 
+    align-items: center; 
+    margin-right: 30px; 
+}
+
+.scoreboard_score h1{
+    color: white; 
+    font-size: 2.7rem;
+}
+
+.scoreboard_score p{
+    color: white; 
+    font-size: 16px;
+    font-weight: 550;
+    line-height: 18px;
+    letter-spacing: 2.5px;
 }
