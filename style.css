@@ -244,3 +244,71 @@ body{
         width: 50px;
     }
 }
+
+.rules-container{
+    text-align: center;
+    margin-top: 10px;
+    margin-left: 600px;
+}
+
+#show-rules-btn {
+    background-color: rgb(1, 27, 88);
+    border-color: rgb(1, 27, 88);
+    padding: 9px 24px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 0.2s;
+    color: rgb(35, 200, 186);
+}
+
+#show-rules-btn:hover {
+    background-color: rgb(35, 200, 186);
+    color: rgb(1, 27, 88);
+    font-weight: bold   ;
+}
+
+/* Modal styles */
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1000; /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgba(0, 0, 0, 0.822); /* Black w/ opacity */
+}
+
+.modal-content {
+    position: relative;
+    margin: auto;
+    padding: 0;
+    width: 80%;
+    max-width: 600px;
+}
+
+.modal-content img {
+    width: 100%;
+    height: auto;
+}
+
+.close {
+    position: absolute;
+    top: 10px;
+    right: 25px;
+    color: #fff;
+    font-size: 35px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+
+#rules-image {
+    margin-top: 20px;
+    max-width: 80%;
+    height: auto;
+    display: block;
+}
+
+
