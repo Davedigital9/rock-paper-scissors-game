@@ -24,10 +24,10 @@ body{
 
 .scoreboard{
     width: 800px; 
-    height: 180px;
+    height: 185px;
     border: 2px solid #0c043f; 
     border-radius: 20px;
-    margin-top: 30px; 
+    margin-top: 20px; 
     display: flex; 
     justify-content: space-between; 
     align-items: center;
@@ -77,7 +77,7 @@ body{
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    margin-top: -10px; 
+    margin-top: -20px; 
     margin-bottom: 25px;  
 }
 
