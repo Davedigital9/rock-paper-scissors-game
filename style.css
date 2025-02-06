@@ -249,12 +249,12 @@ body{
         display: flex;
         justify-content: center;
         align-items: center;
+        width: 100%;
     }
 
     #show-rules-btn {
         display: block;
         margin: 0 auto;
-        margin-right: 600px;
     }
 }
 
